@@ -1,13 +1,16 @@
 h1 {
     border: 2px solid #b82853;
     text-align: center;
+    background-blend-mode: color;
 }
 h2 { /* I wanted to center my second heading*/
    text-align: center;
-   width: 80%
+   width: 80%;
 }
 body {
  background-color: rgba(78, 11, 78, 0.726);
+ margin: 0;
+ padding: 0;
  display: flex;
  flex-direction: column;
 }
@@ -19,26 +22,35 @@ p { /* So with this code I wanted to center my first paragraph*/
 }   /* So here I wanted to make sure the bottom buttons were arranged, somewhat decently */
 input[type="comments"],
 input[type="About"],
-input[type=""] {
+input[type="Quote"] {
     cursor: pointer;
 }
 @media only screen and (min-width: 769PX) {
         orientation: landscape; 
 }
-@media screen and (min-width:980px){
-      
-}    
-.nav a {
-    float: right;
-    padding: 15px;
-    display: horizontal;
-}
-.main-footer{
-    float: center;
-}
-    /* CSS Document*/
-
-ul { 
+ul {/* So here I wanted to make sure my navigation bar didn't have default bullit points */
     list-style-type: none;
-    
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline; 
+} 
+.nav a { /* So here I wanted to make sure my navigation bar went to the top right */
+    float: right;
+    margin: 0;
+    padding: 15px;
+    display: block;
+}
+.Quote {
+    text-align: center;
+}
+.main-footer {/* So here I wanted to create a sticky footer, that stayed at the bottom */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
