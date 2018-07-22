@@ -5,7 +5,7 @@ h1 {
 }
 h2 { /* I wanted to center my second heading*/
    text-align: center;
-   width: 80%;
+   width: 100%;
 }
 body {
  background-color: rgba(78, 11, 78, 0.726);
@@ -32,10 +32,19 @@ ul {/* So here I wanted to make sure my navigation bar didn't have default bulli
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: palevioletred;
+}
+.container {
+   font-weight: bold; 
 }
 li {
     display: inline; 
+    text-align: center;
 } 
+li:last-child {
+    border-bottom: none;
+}
 .nav a { /* So here I wanted to make sure my navigation bar went to the top right */
     float: right;
     margin: 0;
