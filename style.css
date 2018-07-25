@@ -18,7 +18,8 @@ p { /* So with this code I wanted to center my first paragraph*/
     color: rgb(12, 11, 11);
     text-align: left;
     height: 20px;
-    margin: 80px;
+    margin: 50px;
+    font-size: 20px;
 }   /* So here I wanted to make sure the bottom buttons were arranged, somewhat decently */
 input[type="Comments"],
 input[type="About"],
@@ -32,17 +33,18 @@ ul {/* So here I wanted to make sure my navigation bar didn't have default bulli
     overflow: hidden;
     background-color: palevioletred;
 }
-/* Small devices (portrait phones, less than 576px)*/
+/* Small devices */
 @media (min-width: 576px) and (max-width: 767.98px) {
-        orientation: landscape; 
-        orientation: portrait;
+        .body {
+        width: 100%;
+        }
 }
-/* Medium devices (portrait phones, less than 576px)*/
+/* Medium devices  */
 @media (min-width: 768px) and (max-width: 991.98px) {   
     orientation: landscape; 
     orientation: portrait;
 }
-/* Large devices (portrait phones, less than 576px)*/
+/* Large devices */
 @media (min-width: 992px) {
     orientation: landscape; 
     orientation: portrait;
@@ -64,8 +66,10 @@ li:last-child {
     display: block;
 }
 .Quote {
-    position: center;
-    
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    margin: 10px;
 }
 .main-footer {/* So here I wanted to create a sticky footer, that stayed at the bottom */
     position: fixed;
