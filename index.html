@@ -4,6 +4,8 @@
 <head>
 
     <meta name= "viewport" content="width = device-width, inital-scale = 1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <link rel="stylesheet" href= "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     
@@ -23,7 +25,9 @@
                <li><a href="home.html">Home</a></li>
             <a class="inital-scale">Crystal Mozee</a>
         </ul> 
-            <img src="" style="max-width: 100%">
+    </div>
+        <div>
+            <main>
             <h2>Welcome</h2>
             <p onclick="myFunction(this, 'white')">My name is Crystal and this is my website. This is a sort of resume website for me. I am a Code Louisville Participant. This has been incredible learning
                 experience.I have always been interested in web development. I believe this is a awesome opportunity for me. I will definitely keep going and learn more.:)
@@ -36,25 +40,47 @@
                     element.style.color = color;
                 }
                 </script>
+            </main>
+        </div>
                 <!--My intention with the code below was to basically find a way to squeeze in one of my favorite quotes. -->
-            <p class="Quote">
-                <span>"A day without laughter is a day wasted. - Charlie Chaplin"
-                </span>
-                <button>Quote</button>
-            </p>
-    
-            <footer class="main-footer">
+            <div class="container">
+                <p class="Quote">
+                 <span>"A day without laughter is a day wasted. - Charlie Chaplin"
+                 </span>
+                 <button>Quote</button>
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <footer class="main-footer" class="content">
              <div class="footer-inner">
                 <span>&copy;2018</span>
-            </div>
-             </footer>    
-            <button>Comments</button>
+            </footer>    
+            <br>
+            <br>
+            <br>
+        <div>
+            <!--The was just to link my twitter account. -->
+         <a class="twitter-follow-button"
+            href="https://mobile.twitter.com/CrystalMozee">Follow @CrystalMozee</a><br><br>
            
-            <textarea></textarea>
-                 <!--The was just to link my twitter account. -->
-            <a class="twitter-follow-button"
-            href="https://mobile.twitter.com/CrystalMozee">Follow @CrystalMozee</a>
+             <form method="post">
+               <button>Comments</button><br>
+                 <textarea name="comment" form="usrform"></textarea>
+                 <br>
+                <input type="submit"><br>
+              </form>
+              
+              
+         </div>
         
+            <br>
+            <br>
+            <br>
+
     </div>
 </body>
 <script src="jquery-3.3.1.min.js"></script>

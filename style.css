@@ -20,7 +20,7 @@ p { /* So with this code I wanted to center my first paragraph*/
     height: 20px;
     margin: 80px;
 }   /* So here I wanted to make sure the bottom buttons were arranged, somewhat decently */
-input[type="comments"],
+input[type="Comments"],
 input[type="About"],
 input[type="Quote"] {
     cursor: pointer;
@@ -35,8 +35,19 @@ ul {/* So here I wanted to make sure my navigation bar didn't have default bulli
     overflow: hidden;
     background-color: palevioletred;
 }
+/* Small devices (portrait phones, less than 576px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+/* Medium devices (portrait phones, less than 576px)*/
+@media (min-width: 768px) and (max-width: 991.98px) {   
+}
+/* Large devices (portrait phones, less than 576px)*/
+@media (min-width: 992px) {
+
+}
 .container {
-   font-weight: bold; 
+   font-weight: bold;
 }
 li {
     display: inline; 
@@ -52,13 +63,14 @@ li:last-child {
     display: block;
 }
 .Quote {
-    text-align: center;
+    position: center;
 }
 .main-footer {/* So here I wanted to create a sticky footer, that stayed at the bottom */
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 2%;
     background-color: black;
     color: white;
     text-align: center;
