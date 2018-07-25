@@ -25,9 +25,6 @@ input[type="About"],
 input[type="Quote"] {
     cursor: pointer;
 }
-@media only screen and (min-width: 769PX) {
-        orientation: landscape; 
-}
 ul {/* So here I wanted to make sure my navigation bar didn't have default bullit points */
     list-style-type: none;
     margin: 0;
@@ -37,14 +34,18 @@ ul {/* So here I wanted to make sure my navigation bar didn't have default bulli
 }
 /* Small devices (portrait phones, less than 576px)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-
+        orientation: landscape; 
+        orientation: portrait;
 }
 /* Medium devices (portrait phones, less than 576px)*/
 @media (min-width: 768px) and (max-width: 991.98px) {   
+    orientation: landscape; 
+    orientation: portrait;
 }
 /* Large devices (portrait phones, less than 576px)*/
 @media (min-width: 992px) {
-
+    orientation: landscape; 
+    orientation: portrait;
 }
 .container {
    font-weight: bold;
@@ -64,6 +65,7 @@ li:last-child {
 }
 .Quote {
     position: center;
+    
 }
 .main-footer {/* So here I wanted to create a sticky footer, that stayed at the bottom */
     position: fixed;
