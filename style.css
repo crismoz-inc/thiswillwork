@@ -39,16 +39,6 @@ ul {/* So here I wanted to make sure my navigation bar didn't have default bulli
         width: 100%;
         }
 }
-/* Medium devices  */
-@media (min-width: 768px) and (max-width: 991.98px) {   
-    orientation: landscape; 
-    orientation: portrait;
-}
-/* Large devices */
-@media (min-width: 992px) {
-    orientation: landscape; 
-    orientation: portrait;
-}
 .container {
    font-weight: bold;
 }
@@ -71,7 +61,7 @@ li:last-child {
     font-size: 20px;
     margin: 10px;
 }
-.main-footer {/* So here I wanted to create a sticky footer, that stayed at the bottom */
+.main-footer {/* So here I wanted to create a fixed footer, that stayed at the bottom */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -80,4 +70,8 @@ li:last-child {
     background-color: black;
     color: white;
     text-align: center;
+}
+#comment {
+    width:200px;
+    margin:auto; 
 }
