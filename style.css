@@ -17,7 +17,6 @@ body {
 p { /* So with this code I wanted to center my first paragraph*/
     color: rgb(12, 11, 11);
     text-align: left;
-    height: 20px;
     margin: 50px;
     font-size: 20px;
 }   /* So here I wanted to make sure the bottom buttons were arranged, somewhat decently */
@@ -73,5 +72,5 @@ li:last-child {
 }
 #comment {
     width:200px;
-    margin:auto; 
+    margin:50px; 
 }
